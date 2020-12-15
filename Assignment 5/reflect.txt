@@ -1,0 +1,13 @@
+Name: Amirhossein Sabagh
+ID: 152956199
+Email: asabagh@myseneca.ca
+Final Assessment Reflection
+Website's URL: http://arsenicolos.com/WEB222-Store/
+
+In the course of modifying my website for assignment 5 to address the contact and subscribe form, I received help from Bootstrap and jQuery. As time was short, my code got a little messy and I had to download some additional js files and some CSS helper files.
+I did my best to design responsive forms so every user can fill them out on all of the platforms. This matter is so crucial as people are not restricted to check out a website only on a computer. In contact.html, I received help from Bootstrap to organize the fields for me, so on smaller screens, the background picture gets omitted, and fields get smaller as well. 
+Instead of creating a text input and adding an autocomplete for the user to type in the city, I decided to create a selection as it is neater, more straight-forward, and also respected my design. I also defined a regex for the email address to make sure the user enters his/her email address in the correct format. Testing the subscribe form was a pretty easy task; however, the contact form was quite a challenge. The validation wasn't working the way I wanted it to; I wanted to define three required fields for name, email, and message, and also check the validity of the postal code. The logic I used prevented the form to get submitted until all of the fields were filled and the postal code was prompted exactly in a specific format. I ended up rewriting my JavaScript logic and start from scratch to meet the needs of the assessment. 
+Instead of validating the form with the 'pattern' attribute like the way prof David explained, I decided to check the validity of the form in the JavaScript file so I can modify the alert message and give it a better look.
+In order to design the contact webpage similar to the homepage, I used the same colors and fonts (Poppins and JetBrains Mono). I, however, made use of the latter font more to create a delightful contrast with the homepage.
+I have a registered domain that hasn't been used in a while. I decided to finally make use of it and host my website on one of its sub-domains.
+My advice for the web developers is to first enrich their knowledge of web development, languages like JavaScript, and learning how to work with libraries and frameworks like Bootstrap. Then, when they feel somehow proficient in them, emigrate to platforms like WordPress and WebFlow as they are more flexible and are much easier to work with.

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WEB222 Music Store</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="./images/favicoon.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-contact.css" />
+    <!--===============================================================================================-->
+  </head>
+  <body>
+      <!-- <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark black">
+            <div class="container">
+                <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="view intro-2">
+            <div class="full-bg-img">
+                <div class="mask rgba-black-strong flex-center">
+                    <div class="container">
+                        <div class="white-text text-center wow fadeInUp">
+                            <h2>This Navbar isn't fixed</h2>
+                            <h5>When you scroll down it will disappear</h5>
+                            <br>
+                            <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <div class="container-contact100">
+      <div class="wrap-contact100">
+        <form class="contact100-form validate-form" action="https://httpbin.org/post" method="POST">
+          <span class="contact100-form-title">
+            Send Us A Message
+          </span>
+  
+  
+          <div class="wrap-input100 validate-input" data-validate="Name is required">
+            <label class="label-input100" for="name">Full name <span class="text-danger">*</span></label>
+            <input id="name" class="input100" type="text" name="name" autocomplete="name" placeholder="Enter your name...">
+            <span class="focus-input100"></span>
+          </div>
+  
+  
+          <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+            <label class="label-input100" for="email">Email Address <span class="text-danger">*</span></label>
+            <input id="email" class="input100" type="text" name="email" autocomplete="email" placeholder="Enter your email...">
+            <span class="focus-input100"></span>
+          </div>
+
+
+          <div class="wrap-input100 validate-input">
+            <label class="label-input100" for="address">Address</label>
+            <input id="address" class="input100" type="text" name="address" placeholder="Enter your address...">
+            <span class="focus-input100"></span>
+          </div>
+  
+          <div class="wrap-input100">
+            <div class="label-input100">City</div>
+            <div>
+              <select class="js-select2" name="city">
+                <option>Select..</option>
+                <option>Calgary</option>
+                <option>Edmonton</option>
+                <option>Halifax</option>
+                <option>Montreal</option>
+                <option>Ottawa</option>
+                <option>Regina</option>
+                <option>Toronto</option>
+                <option>Victoria</option>
+                <option>Vancouver</option>
+                <option>Winnipeg</option>
+              </select>
+              <div class="dropDownSelect2"></div>
+            </div>
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate = "Valid Postal Code is required: M2N7B6 or M2N 7B6">
+            <label class="label-input100" for="postal-code">Postal Code</label>
+            <input id="postal-code" class="input100" type="text" name="postal-code" autocomplete="postal-code" placeholder="Ex. M2N 7B6">
+            <span class="focus-input100"></span>
+          </div>
+
+
+          <div class="wrap-contact3-form-radio">
+						<div class="contact3-form-radio m-r-30">
+							<input class="input-radio3" id="radio1" type="radio" name="choice" value="question" checked="checked">
+							<label class="label-radio3" for="radio1">
+								Question
+							</label>
+						</div>
+
+						<div class="contact3-form-radio m-r-30">
+							<input class="input-radio3" id="radio2" type="radio" name="choice" value="comment">
+							<label class="label-radio3" for="radio2">
+								Comment
+							</label>
+            </div>
+            
+            <div class="contact3-form-radio">
+							<input class="input-radio3" id="radio3" type="radio" name="choice" value="order-problem">
+							<label class="label-radio3" for="radio3">
+								Order Problem
+							</label>
+						</div>
+          </div>
+          
+          <div class="wrap-input100 input3-select">
+            <div class="wrap-input100 validate-input">
+              <label class="label-input100" for="order-no">Order Number</label>
+              <input id="order-no" class="input100" type="text" name="order-no" placeholder="Enter Your Order Number...">
+              <span class="focus-input100"></span>
+            </div>
+					</div>
+  
+          <div class="wrap-input100 validate-input" data-validate = "Message is required">
+            <label class="label-input100" for="message">Message <span class="text-danger">*</span></label>
+            <textarea id="message" class="input100" name="message" placeholder="Type your message here..."></textarea>
+            <span class="focus-input100"></span>
+          </div>
+
+          <input name="author" value="Amirhossein Sabagh" type="hidden" />
+  
+          <div class="container-contact100-form-btn">
+            <button class="contact100-form-btn">
+              Send
+            </button>
+          </div>
+
+          <div class="back-home">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <a href="./index.html"><h4>Home</h4></a>
+          </div>
+  
+          <div class="contact100-form-social flex-c-m">
+            <a href="https://facebook.com" class="contact100-form-social-item flex-c-m bg1 m-r-5">
+              <i class="fa fa-facebook-f" aria-hidden="true"></i>
+            </a>
+  
+            <a href="https://www.twitter.com/richardali_the6" class="contact100-form-social-item flex-c-m bg2 m-r-5">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+  
+            <a href="https://open.spotify.com/user/pgeibeia0bmlahg7ba1hgptor" class="contact100-form-social-item flex-c-m bg3">
+              <i class="fa fa-spotify" aria-hidden="true"></i>
+            </a>
+          </div>
+        </form>
+  
+        <div class="contact100-more flex-col-c-m" style="background-image: url('images/contact-music.jpg');">
+        </div>
+      </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+      <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+      <script src="vendor/bootstrap/js/popper.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+      <script src="vendor/select2/select2.min.js"></script>
+      <script>
+        $(".js-select2").each(function(){
+          $(this).select2({
+            minimumResultsForSearch: 20,
+            dropdownParent: $(this).next('.dropDownSelect2')
+          });
+        })
+        $(".js-select2").each(function(){
+          $(this).on('select2:open', function (e){
+            $(this).parent().next().addClass('eff-focus-selection');
+          });
+        });
+        $(".js-select2").each(function(){
+          $(this).on('select2:close', function (e){
+            $(this).parent().next().removeClass('eff-focus-selection');
+          });
+        });
+
+        </script>
+    <!--===============================================================================================-->
+      <script src="vendor/daterangepicker/moment.min.js"></script>
+      <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+      <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+  
+  </body>
+</html>
