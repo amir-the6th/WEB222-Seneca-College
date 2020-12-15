@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Music Store</title>
+    <!-- Access CSS File -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/media-querires.css" type="text/css" />
+    <!-- Access Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7609dd00f0.js" crossorigin="anonymous"></script>
+    <!-- Access Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Create Favicon -->
+    <link rel="icon" type="image/png" href="./images/favicoon.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header-banner">
+      <header>
+        <div class="menu-logo">
+          <a href="./index.html">
+            <img src="./images/Arsenicolos-logo.png" id="logo" alt="logo" />
+            <!-- the logo is designed and licensed by me -->
+          </a>
+        </div>
+        <div class="menu-options">
+          <a href="#" id="home">Home</a>
+          <a href="#wrapper" id="songs">Songs</a>
+          <a href="#about" id="about">About</a>
+          <a href="contact.html" id="contact">Contact</a>
+          <a href="#" id="cart"><i class="fas fa-shopping-cart"></i>&nbsp;Cart</a>
+          <a href="#" id="login"><i class="fas fa-user"></i>&nbsp;Login</a>
+        </div>
+      </header>
+
+      <div class="banner-text">
+        <h1>Music</h1>
+        <h1>For</h1>
+        <h1>Your</h1>
+        <h1>Soul</h1>
+      </div>
+    </div>
+    <!-- / Header -->
+
+    <!-- Category Menu -->
+    <nav>
+      <div class="navbar">
+        <div class="all">
+          <button class="button" id="show-all-items">
+            <i class="fas fa-border-all"></i>&nbsp;Show All
+          </button>
+        </div>
+        <div class="rock">
+          <button class="button" id="rock"><i class="fas fa-hand-rock"></i>&nbsp;Rock</button>
+        </div>
+        <div class="pop">
+          <button class="button" id="pop"><i class="fas fa-guitar"></i>&nbsp;Pop</button>
+        </div>
+        <div class="jazz">
+          <button class="button" id="jazz"><i class="fas fa-wind"></i>&nbsp;Jazz</button>
+        </div>
+        <div class="hip-hop">
+          <button class="button" id="hip-hop"><i class="fas fa-fire"></i>&nbsp;Hip Hop</button>
+        </div>
+        <div class="hide">
+          <button class="button" id="hide-all-items">
+            <i class="fas fa-border-none"></i>&nbsp;Hide All
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- / Category Menu -->
+
+    <!-- Main Section: Song Cards -->
+    <main id="main">
+      <div class="wrapper" id="wrapper"></div>
+    </main>
+    <!-- / Main Section -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 footer-about wow fadeInUp">
+              <img
+                class="logo-footer"
+                src="./images/Arsenicolos-logo.png"
+                alt="logo-footer"
+                data-at2x="assets/img/logo.png"
+              />
+              <p>
+                We are a young company with a passion for music. We believe in our good taste of
+                music. Scientific researches indicate that people can cross life's barriers way
+                easier when they are listening to music. So why not combine our great taste and the
+                facts that scientists have given and make people and ourselves happier, eh?
+              </p>
+            </div>
+            <div class="col-md-4 offset-md-1 footer-contact wow fadeInDown">
+              <h3>Contact</h3>
+              <p><i class="fas fa-map-marker-alt"></i> Somewhere st., Toronto, ON, Canada</p>
+              <p><i class="fas fa-phone"></i> Phone: +1 (600) 333 5349</p>
+              <p>
+                <i class="fas fa-envelope"></i> Email:
+                <a href="mailto:richardflannel6@gmail.com">Email US</a>
+              </p>
+              <p><i class="fab fa-skype"></i> Skype: you_online</p>
+            </div>
+            <div class="col-md-4 footer-links wow fadeInUp">
+              <div class="row">
+                <div class="col">
+                  <h3>Links</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <p><a href="#home">Home</a></p>
+                  <p><a href="#">About Us</a></p>
+                  <p><a href="./contact.html">Contact Us</a></p>
+                  <p><a href="#terms">Terms & Condition</a></p>
+                  <p><a href="#policy">Privacy Policy</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subscribe Newsletter -->
+      <div id="subscribe-footer">
+        <div class="container">
+          <div class="left">
+            <i class="fas fa-envelope"></i>
+            <h3>Subscribe to our newsletter!</h3>
+            <p>
+              Liked our song choices? Sign up now to get fresh songs we post directly to your inbox.
+            </p>
+          </div>
+          <i class="fas fa-chevron-right"></i>
+          <div class="right">
+            <form action="https://formspree.io/f/mrgoypqr" method="POST">
+              <input class="inptfld" name="email" placeholder=" Your Email" type="email" />
+              <input name="loc" value="en_CA" type="hidden" />
+              <input class="subscribebtn" value="Subscribe Now!" type="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- / Subscribe Newsletter -->
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-copyright">
+              &copy; Copyright 2020, Amirhossein Sabagh. Made with 🤍. All Rights Reserved
+            </div>
+            <div class="col-md-6 footer-social">
+              <a href="https://open.spotify.com/user/pgeibeia0bmlahg7ba1hgptor" target="_blank"
+                ><i class="fab fa-spotify"></i
+              ></a>
+              <a href="https://www.twitter.com/richardali_the6" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.pinterest.com" target="_blank"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- / Footer -->
+
+    <!-- Load all of the scripts -->
+    <script src="js/music.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+<!--
+      Introduction
+      ------------
+
+      You are asked to create an online store in HTML, CSS, and JavaScript.
+      Please implement a store with all of the following requirements.
+
+      You may remove this comment and place all your HTML in this file.
+
+      Requirements:
+
+      1. Use a JavaScript or JSON file to describe your store's items, and each
+      item's details.  For example, the price, title, description, image URL, etc.
+      should all be properties on an Object, and these Objects should all be stored
+      in one or more Arrays, for example:
+
+      [
+        {
+          name: 'Name of product',
+          description: 'Full desc of this item...'
+          price: 100,                        // NOTE: prices are often done in whole cents and then formatted to dollars/cents
+          category: 'category1',             // category of this item
+          imageUrl: 'images/item-1234.jpg',  // relative URL to image of this item
+        },
+        ...
+      ]
+
+      2. Use JavaScript and DOM programming to build the items in your store (see
+      details below on requirements).  Instead of hard-coding everything in HTML,
+      write functions to generate the cards for each item programmatically (similar
+      to how you built the countries table UI in the previous assignment).
+
+      3. Include a header across the top with your store's name, a logo,
+      and use a different background colour, web font, etc. Your header should
+      include info about what the store is, what it sells, etc.  Use some images
+      to try and draw the user in. NOTE: place all your site's images in the
+      `src/images/` directory.
+
+      4. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture of the item
+        - the item's name or title
+        - a complete description of the item
+        - a category (i.e., each item must belong to one or more categories)
+        - a price, formatted in Canadian Dollars (i.e., en-CA)
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).  The HTML
+      for these cards should be generated from your JavaScript or JSON data (see 1.
+      and 2. above).
+
+      5. A category menu or "sidebar" (left, right, or top depending on your design)
+      showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      6. Below the store items, a footer with the name of the store, any relevant
+      links you need to give users.  Include links and icons to any social media
+      for your store (Facebook, Twitter, etc). NOTE: you don't have to create such
+      accounts, but you can provide links to imaginary accounts.
+
+      7. Use at least two different Web Fonts for your store.  The titles should
+      be different from any regular text.  Use a free font service like
+      https://fonts.google.com/ or any other that you choose.  You can also
+      experiment with different font sizes and colours to draw attention toward
+      or away from various parts of your design.
+
+      8. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      9. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      10. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      11. Make sure you reduce the download size of images you include in your
+      store.  Your images shouldn't be larger than 1M in size.  Users don't want to
+      download 10s or 100s of megabytes of data, especially on mobile.  You can use an
+      online tool like https://squoosh.app/ to help you reduce images.  You will
+      lose marks if your images aren't optimized for the web.
+
+      12. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      13. Make sure your code is properly indented and commented, and that you've used
+      good naming practices for variables, functions, ids, classes, etc.
+
+      14. Have fun!  Build something you'd be proud to show future employers in
+      interviews.  Take the time to properly design and implement a beautiful and
+      functional storefront.  Maybe it will inspire you to start your own online business?
+    -->

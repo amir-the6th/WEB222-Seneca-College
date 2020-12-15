@@ -1,0 +1,17 @@
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .song-card {
+    width: 100%;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
